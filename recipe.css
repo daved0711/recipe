@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+:root {
+  --font-primary: "Open Sans", Arial, sans-serif;
+  --font-secondary: "Antic Didone", serif;
+  --clr-dark: #2b2b2b;
+  --clr-light: #fff;
+  --clr-accent: #d9964a;
+  --clr-blue: #0b5089;
+  --clr-border: #f9e9d7;
+  --clr-gray: #666666;
+
+  --h1: 90px;
+  --h2: 33px;
+  --h3: 24px;
+  --h4: 16px;
+  --h5: 12px;
+  --h6: 10px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  color: var(--clr-dark);
+  font-family: var(--font-primary);
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  line-height: 1.4;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+time {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 150rem;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+/* Header */
+.header {
+  background-color: transparent;
+  z-index: 9999;
+  transform: translateY(5rem);
+}
+.header__wrapper {
+  display: flex;
+  font-display: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__wrapper {
+  line-height: 3rem;
+}
+.header__nav {
+  display: flex;
+  gap: 3rem;
+}
+.header__nav li a {
+  color: var(--clr-dark);
+  font-weight: 700;
+  font-size: 2rem;
+}
+h3 {
+  font-size: var(--h3);
+}
+
+/* THIGHS */
+
+.thighs {
+  padding: 5rem 0;
+  background-color: var(--clr-border);
+  margin-top: 10rem;
+}
+.thighs__wrapper {
+  display: flex;
+  flex-direction: row row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7rem;
+}
+.thighs__img {
+  max-width: 90rem;
+}
+
+.thighs__text h2 {
+  font-size: var(--h2);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.thighs__text p {
+  text-align: justify;
+  margin-bottom: 3rem;
+  max-width: 35rem;
+}
+
+/*RECIPE */
+.recipe {
+  padding: 5rem 0;
+  padding-bottom: 5rem;
+}
+
+.recipe__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1rem;
+}
+
+.title {
+  color: var(--clr-accent);
+  text-align: center;
+  font-size: var(--h3);
+  letter-spacing: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.recipe__title h2 {
+  color: var(--clr-accent);
+
+  font-size: var(--h2);
+}
+
+.recipe__title h2::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  background-color: var(--clr-accent);
+  width: 104.5rem;
+  height: 0.3rem;
+  left: 3rem;
+  bottom: 1rem;
+}
+
+.card p {
+  margin-top: 1.5rem;
+  text-align: justify;
+}
+.card h3 {
+  font-size: var(--h3);
+  text-align: center;
+}
+
+.padding {
+  padding: 5rem 0;
+}
+.recipe__wrapper img {
+  height: 40rem;
+  width: 40rem;
+}
+
+/* COLLECTION */
+.collection__title {
+  font-size: var(--h2);
+  color: var(--clr-accent);
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.collection__title h2::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  background-color: var(--clr-accent);
+  width: 50rem;
+  left: 3rem;
+  height: 0.3rem;
+  bottom: 1rem;
+}
+.collection__title h2::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  background-color: var(--clr-accent);
+  width: 52rem;
+  right: 3rem;
+  height: 0.3rem;
+
+  bottom: 1rem;
+}
+
+.collection__card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5rem;
+  margin-bottom: 10rem;
+  text-align: justify;
+}
+.collection__card img {
+  padding-bottom: 5rem;
+  max-width: 70rem;
+}
+
+.collection__card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.collection__card--text p {
+  padding-bottom: 4rem;
+}
+.collection__card--text h2 {
+  font-size: var(--h2);
+  font-weight: 700;
+  font-family: var(--font-secondary);
+}
+
+/*  NEWSLETTER */
+
+.newsLetter {
+  padding: 5rem 0;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url(./recipe/images/bell_pepper.jpeg);
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* for details */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.newsLetter__wrapper h2 {
+  text-align: center;
+  font-size: var(--h2);
+  color: var(--clr-light);
+  font-weight: 700;
+  font-family: var(--font-secondary);
+  padding-bottom: 2rem;
+}
+.newsLetter__wrapper p {
+  text-align: center;
+  color: var(--clr-light);
+  font-size: var(--h4);
+  padding: 1rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+.newsLetter textarea {
+  width: 30rem;
+  border-radius: 0.5rem;
+}
+.newsLetter a {
+  width: 20rem;
+  border-radius: 0.5rem;
+}
+
+/* CLASSIC */
+
+.classic {
+  padding: 5rem 0;
+}
+
+.classic__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.classic__wrapper img {
+  height: 10rem;
+  width: 13rem;
+}
+
+.classic__card--text h5 {
+  font-size: var(--h5);
+  font-family: var(--font-secondary);
+  font-weight: 700;
+}
+.classic__card--text h5 {
+  color: var(--clr-accent);
+}
+
+.classic__card--text h3 {
+  font-size: var(--h3);
+  letter-spacing: 1rem;
+  color: var(--clr-accent);
+  font-weight: 100rem;
+}
+
+.classic__card {
+  display: flex;
+  padding-bottom: 1rem;
+}
+.recipe__title {
+  padding-bottom: 3rem;
+  font-size: var(--h2);
+  font-family: var(--font-secondary);
+  font-weight: 700;
+}
+
+/* footer */
+.copyright {
+  background-color: var(--clr-border);
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  font-weight: 50;
+}
+
+.copyright__title {
+  font-size: var(--h2);
+}
+
+/* About */
+
+.theRecipe__wrapper {
+  background-color: var(--clr-border);
+  max-height: 50rem;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 25rem;
+}
+.theRecipe__title h2 {
+  font-size: var(--h2);
+  text-align: center;
+}
+.theRecipe__wrapper img {
+  width: 101rem;
+  display: flex;
+}
+
+/* About Recipe.com */
+/* left */
+.abouttheRecipe {
+  padding: 5rem 0;
+}
+
+.aboutLeft h2 {
+  font-size: var(--h2);
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.abouttheTitle__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  text-align: justify;
+}
+
+.aboutLeft p {
+  text-align: justify;
+  padding-bottom: 3rem;
+  padding-left: 17rem;
+}
+
+/* right */
+
+.Recipe__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 15rem;
+  padding-top: 1rem;
+}
+
+.aboutright img {
+  height: 10rem;
+  width: 13rem;
+  padding-top: 1rem;
+}
+
+.Recipe__card--text h5 {
+  color: var(--clr-accent);
+}
+.Recipe__card--text h3 {
+  font-size: var(--h3);
+  letter-spacing: 1rem;
+  color: var(--clr-accent);
+  font-weight: 100rem;
+  padding-top: 0.5rem;
+}
+
+.Recipe__card {
+  display: flex;
+  padding-bottom: 1rem;
+  justify-content: center;
+}
+.recipe__title {
+  padding-bottom: 3rem;
+  font-size: var(--h2);
+  font-family: var(--font-secondary);
+  font-weight: 700;
+}
+
+/* CONTACT */
+
+/* REPEATABLE button */
+.btn {
+  background-color: transparent;
+  border: var(--clr-dark);
+  padding: 1rem 2rem;
+  /* border-radius: 10rem; */
+  color: transparent;
+}
+.btn.bg--tertiary {
+  background-color: var(--clr-accent);
+  border: var(--clr-accent);
+  color: var(--clr-light);
+}
+.btn.bg--tertiary:hover {
+  background-color: var(--clr-light);
+  border: 1px solid var(--clr-dark);
+  color: var(--clr-dark);
+}
+
+/* REPITABLE COLOR */
+.author {
+  display: flex;
+  font-family: var(--font-primary);
+  color: var(--clr-accent);
+  letter-spacing: 1rem;
+}
